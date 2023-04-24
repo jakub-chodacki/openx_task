@@ -1,0 +1,16 @@
+Successful Login Test Cases:
+Test case 1: Login with valid username and password - this should successfully log the user into the system.
+Test case 2: Login with valid email and password - some systems use email instead of username for login, so it's important to test this scenario as well.
+Test case 3: Login with case-insensitive username - the system should allow users to login with a username in any case, so it's important to test this scenario.
+Test case 4: Login with case-insensitive email - the system should allow users to login with an email in any case, so it's important to test this scenario.
+Test case 5: Login with leading/trailing spaces in username/email and password - the system should trim leading/trailing spaces from the username/email and password, so it's important to test this scenario.
+Unsuccessful Login Test Cases:
+Test case 1: Login with invalid username/email and password - the system should reject login attempts with invalid credentials.
+Test case 2: Login with valid username/email and incorrect password - the system should reject login attempts with incorrect password.
+Test case 3: Login with locked account - if the user's account is locked due to too many incorrect login attempts, the system should reject login attempts until the account is unlocked.
+Test case 4: Login with disabled account - if the user's account is disabled for any reason, the system should reject login attempts until the account is re-enabled.
+Additional Test Cases:
+Test case 1: Login with SQL injection - the system should prevent SQL injection attacks.
+Test case 2: Login with cross-site scripting (XSS) - the system should prevent XSS attacks.
+Test case 3: Login with expired password - if the user's password has expired, the system should prompt the user to change the password before allowing them to login.
+Test case 4: Login with multi-factor authentication (MFA) - if the system supports MFA, it's important to test this scenario as well.
